@@ -1,6 +1,6 @@
 # Liftloq
 
-Public site for the Liftloq Android app privacy policy (GitHub Pages).
+Public site for the Liftloq Android app (GitHub Pages).
 
-- Policy: https://konstantyp.github.io/liftloq/
-
+- Privacy Policy: https://konstantyp.github.io/liftloq/
+- How to use Liftloq: https://konstantyp.github.io/liftloq/help/

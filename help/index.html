@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to use Liftloq</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.55; max-width: 42rem; margin: 2rem auto; padding: 0 1.25rem; }
+    h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+    h2 { font-size: 1.15rem; margin-top: 1.75rem; }
+    .meta { color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; }
+    a { color: #1565c0; }
+    ol.steps { padding-left: 1.25rem; }
+    ol.steps li { margin: 0.4rem 0; }
+    figure { margin: 1.25rem 0; }
+    figure img { max-width: 100%; height: auto; border-radius: 12px; display: block; }
+    figcaption { color: #666; font-size: 0.9rem; margin-top: 0.5rem; }
+    .tip { margin-top: 1.75rem; padding: 0.85rem 1rem; border-radius: 12px; background: color-mix(in srgb, #1565c0 8%, transparent); }
+  </style>
+</head>
+<body>
+  <h1>How to use Liftloq</h1>
+  <p class="meta">Local workout calendar · No account required<br />
+  Screens shown are design comps matching current UI (1.2.x); device photos may replace them later.</p>
+
+  <p>Liftloq keeps your workout plan on your device. Mark days on the calendar, manage workout types, and optionally track supplement spending — without signing in.</p>
+
+  <h2>1. Mark a workout on the calendar</h2>
+  <ol class="steps">
+    <li>Open <strong>Calendar</strong> (home).</li>
+    <li>Tap a day → pick a workout type (up to two per day when supported).</li>
+    <li>The day cell shows the type color and label.</li>
+  </ol>
+
+  <figure>
+    <img src="images/calendar-daycells.png" alt="Calendar month with colored day cells for Push, Pull, and Legs, including a split cell for two workouts on one day" loading="lazy" width="420" height="780" />
+    <figcaption>Calendar day cells show each workout type’s color and label. A split cell means two types on the same day.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/day-detail.png" alt="Day detail screen with workout type chips and an optional notes field" loading="lazy" width="420" height="780" />
+    <figcaption>Day screen: select type chips (for example Push), add an optional note, then Save.</figcaption>
+  </figure>
+
+  <h2>2. Add and remove workout types</h2>
+  <ol class="steps">
+    <li>From Calendar, tap the <strong>Workout types</strong> button (FAB), or use <strong>Manage types</strong> on a day screen.</li>
+    <li>Add: tap the add (+) control → enter a name and pick a color.</li>
+    <li>Remove: delete a type from the list (workouts of that type leave the calendar).</li>
+  </ol>
+
+  <figure>
+    <img src="images/workout-types-fab.png" alt="Calendar screen with the Workout types floating action button expanded" loading="lazy" width="420" height="820" />
+    <figcaption>Calendar with the Workout types FAB — open it to manage your type list.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/workout-types-list.png" alt="Calendar screen showing the Workout types entry point at rest" loading="lazy" width="420" height="820" />
+    <figcaption>Same entry point at rest: Workout types stays available while you browse the month.</figcaption>
+  </figure>
+
+  <h2>3. Track supplements (Supps money pit)</h2>
+  <ol class="steps">
+    <li>Open the navigation drawer → <strong>Supps money pit</strong>.</li>
+    <li>Add a purchase (name, price, date). Currency comes from <strong>Settings</strong>.</li>
+    <li>See <strong>Total spent on supplements</strong> and the <strong>Money burnt</strong> list.</li>
+  </ol>
+
+  <figure>
+    <img src="images/drawer-supps-money-pit.png" alt="Navigation drawer highlighting Supps money pit" loading="lazy" width="540" height="1216" />
+    <figcaption>Drawer entry: Supps money pit (alongside Calendar, Stats, and Settings).</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/supps-money-pit-screen.png" alt="Supps money pit screen with total spent card and Money burnt purchase list" loading="lazy" width="540" height="1216" />
+    <figcaption>Supps money pit: total spent on supplements plus the Money burnt purchase list.</figcaption>
+  </figure>
+
+  <div class="tip">
+    <strong>Tip:</strong> Swipe left on Calendar to cycle <strong>Calendar → Stats → Supps money pit</strong> (then back to Calendar).
+  </div>
+
+  <figure>
+    <img src="images/swipe-edge-peek.png" alt="Calendar screen with a subtle edge peek hint for swiping to the next destination" loading="lazy" width="420" height="824" />
+    <figcaption>Optional first-run edge peek on Calendar — a hint that left-swipe reaches Stats and beyond.</figcaption>
+  </figure>
+
+  <h2>Privacy &amp; contact</h2>
+  <p><a href="../">Privacy Policy</a> · Contact: <a href="mailto:p4we1.dev@gmail.com">p4we1.dev@gmail.com</a></p>
+  <p class="meta">Liftloq · local data only · no account</p>
+</body>
+</html>
