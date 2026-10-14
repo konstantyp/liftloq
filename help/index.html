@@ -21,32 +21,34 @@
 </head>
 <body>
   <h1>How to use Liftloq</h1>
-  <p class="meta">Local workout calendar · No account required</p>
+  <p class="meta">Local workout calendar · No account required · Updated for version 2.0.9</p>
 
-  <p>Liftloq keeps your workout plan on your device. Mark days on the calendar, manage workout types, and optionally track supplement spending — without signing in.</p>
+  <p>Liftloq keeps your workout plan on your device. Mark days on the calendar, manage workout types, plan and time HYROX workouts, and optionally track supplement spending — without signing in.</p>
 
   <h2>1. Mark a workout on the calendar</h2>
   <ol class="steps">
     <li>Open <strong>Calendar</strong> (home).</li>
-    <li>Tap a day.</li>
-    <li>Select up to <strong>two</strong> workout types (chips). You can also add optional notes.</li>
-    <li>Tap <strong>Save</strong> (top of the day screen). Nothing is stored until you save.</li>
-    <li>Back on the calendar, that day shows the type color(s).</li>
+    <li>Tap a day (or the add button). The day sheet has collapsible <strong>Bodybuilding</strong>, <strong>HYROX workouts</strong> and <strong>Notes</strong> sections.</li>
+    <li>Pick up to <strong>three</strong> entries in total (Bodybuilding types and HYROX workouts combined). At 3, the other picks are disabled until you deselect one.</li>
+    <li>Tap <strong>Save</strong>. Nothing is stored until you save.</li>
+    <li>The day shows one colour band per entry: Bodybuilding first, then HYROX.</li>
   </ol>
 
   <figure>
     <img src="images/help-calendar.png" alt="Liftloq Calendar month view" loading="lazy" width="540" height="1112" />
-    <figcaption>Calendar: tap a day to open it. Use <strong>Workout types</strong> (bottom) to manage types.</figcaption>
+    <figcaption>Calendar: tap a day to open it.</figcaption>
   </figure>
-
   <figure>
-    <img src="images/help-day-add.png" alt="Day screen with workout types, notes, and Save" loading="lazy" width="540" height="1112" />
-    <figcaption>Day screen: pick type(s) and notes, then tap <strong>Save</strong>.</figcaption>
+    <img src="images/help-day-cap.webp" alt="Day sheet with 3 of 3 entries picked" loading="lazy" width="540" height="1200" />
+    <figcaption>Day sheet at the limit: 3 of 3 picked, the rest is disabled.</figcaption>
   </figure>
-
+  <figure>
+    <img src="images/help-calendar-3-entries.webp" alt="Calendar cells with one, two and three colour bands" loading="lazy" width="540" height="480" />
+    <figcaption>Cells with 1, 2 and 3 entries. Names show for 1–2 entries; with 3, the bands show the colours.</figcaption>
+  </figure>
   <h2>2. Add and remove workout types</h2>
   <ol class="steps">
-    <li>From Calendar, tap <strong>Workout types</strong> (bottom button). Or on a day screen, tap <strong>Manage types</strong>.</li>
+    <li>Open the menu (☰) → <strong>Workout types</strong>. Or on a day sheet, tap <strong>Manage types</strong>.</li>
     <li>To add: tap <strong>+</strong>, enter a name, pick a color, then tap <strong>Save</strong>.</li>
     <li>To remove: tap the trash icon on a type, then confirm <strong>Delete</strong>.</li>
   </ol>
@@ -69,8 +71,77 @@
     <figcaption>Supps money pit: tap <strong>+</strong> to add a purchase, then <strong>Save</strong>.</figcaption>
   </figure>
 
+  <h2>4. HYROX β</h2>
+  <ol class="steps">
+    <li><strong>Builder:</strong> menu (☰) → <strong>HYROX (beta)</strong> → <strong>+</strong>. Name the workout, pick a colour, division and segments (runs and stations with distance/weight), then <strong>Save</strong>.</li>
+    <li><strong>Plan it:</strong> on a day sheet, open <strong>HYROX workouts</strong> and pick one or more, then <strong>Save</strong>.</li>
+    <li><strong>Start HYROX:</strong> on a day with a planned HYROX workout, a <strong>Start HYROX</strong> button appears above the add button. With several planned, it opens a menu to choose one.</li>
+    <li><strong>Race mode:</strong> tap <strong>Split</strong> at the end of each segment. <strong>Pause</strong> freezes the clock (paused time is not counted), <strong>Resume</strong> continues, the undo button removes the last split. <strong>Finish</strong> (top bar) asks for confirmation. Then review and <strong>Save</strong>; results show with an <strong>OK</strong> button back to the calendar.</li>
+    <li><strong>Stats:</strong> Stats → <strong>HYROX β</strong> shows History (tap a session for its results), best splits and station decay.</li>
+  </ol>
+
+  <figure>
+    <img src="images/help-hyrox-page.webp" alt="HYROX page with workout templates" loading="lazy" width="540" height="1200" />
+    <figcaption>Your HYROX workouts.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-hyrox-builder.webp" alt="HYROX workout builder" loading="lazy" width="540" height="1200" />
+    <figcaption>Builder: name, colour, division and segments.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-start-hyrox-menu.webp" alt="Start HYROX menu with two planned workouts" loading="lazy" width="540" height="1200" />
+    <figcaption>Start HYROX with two workouts planned today.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-race-running.webp" alt="Race mode running" loading="lazy" width="540" height="1200" />
+    <figcaption>Race mode: total time, current segment, next segment and recent laps vs your best.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-race-paused.webp" alt="Race mode paused" loading="lazy" width="540" height="1200" />
+    <figcaption>Paused: the clock is frozen and Split is disabled until you Resume.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-results.webp" alt="HYROX results after saving" loading="lazy" width="540" height="1200" />
+    <figcaption>Results after saving, with OK back to the calendar.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-stats-hyrox.webp" alt="Stats HYROX tab" loading="lazy" width="540" height="1200" />
+    <figcaption>Stats → HYROX β.</figcaption>
+  </figure>
+  <h2>5. Settings: sections and toggles</h2>
+  <ol class="steps">
+    <li>Menu (☰) → <strong>Settings</strong>. Sections: <strong>General</strong> (language, currency, motivation quote), <strong>Modes</strong>, <strong>Workout plan</strong> and <strong>About</strong>.</li>
+    <li><strong>Modes:</strong> turn <strong>Bodybuilding</strong> or <strong>HYROX (beta)</strong> off to hide everything for that mode (calendar entries, legend, stats, widget entries, menu pages). Nothing is deleted; turning it back on restores it. One of the two must stay on.</li>
+    <li>A language change is applied when you tap <strong>Save</strong> (bottom right).</li>
+  </ol>
+
+  <figure>
+    <img src="images/help-settings.webp" alt="Settings with General and Modes sections" loading="lazy" width="540" height="1200" />
+    <figcaption>Settings: General and Modes.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-settings-end.webp" alt="Settings with Workout plan and About sections" loading="lazy" width="540" height="1200" />
+    <figcaption>Workout plan (export/import) and About.</figcaption>
+  </figure>
+  <h2>6. Widgets</h2>
+  <ol class="steps">
+    <li>Long-press your home screen → <strong>Widgets</strong> → <strong>Liftloq</strong>, then add the week or month widget.</li>
+    <li>Like the app, weeks start on Monday and each day shows up to 3 colour bands (the week widget adds one-line names).</li>
+    <li>Widgets update right after you save, delete or import.</li>
+  </ol>
+
+  <figure>
+    <img src="images/help-widget-month.webp" alt="Month widget on the home screen with a day showing three bands" loading="lazy" width="540" height="792" />
+    <figcaption>Month widget: 14 Oct has three entries.</figcaption>
+  </figure>
+  <h2>7. Export / import</h2>
+  <ol class="steps">
+    <li>Settings → <strong>Workout plan</strong> → <strong>Export workout plan</strong> saves a JSON backup (types, days, notes, supplements and HYROX data).</li>
+    <li><strong>Import workout plan</strong> replaces your data from such a file, after a confirmation. Days with more than 3 entries keep the first 3.</li>
+  </ol>
+
   <div class="tip">
-    <strong>Tip:</strong> Swipe left on Calendar to cycle <strong>Calendar → Stats → Supps money pit</strong> (then back to Calendar). Settings stays in the menu only.
+    <strong>Tip:</strong> Swipe left below the calendar to cycle <strong>Calendar → Workout types → HYROX β → Stats → Supps money pit</strong>. Pages for a mode that is off are skipped. Settings stays in the menu only.
   </div>
 
   <h2>Privacy &amp; contact</h2>
