@@ -21,7 +21,7 @@
 </head>
 <body>
   <h1>How to use Liftloq</h1>
-  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.2.0</p>
+  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.2.1</p>
 
   <p>Liftloq keeps your workout plan on your device. Mark days on the calendar, manage workout types, plan and time HYROX workouts, and optionally track supplement spending — without signing in.</p>
 
@@ -132,9 +132,10 @@
   </figure>
   <h2>6. Settings: sections and toggles</h2>
   <ol class="steps">
-    <li>Menu (☰) → <strong>Settings</strong>. Sections: <strong>General</strong> (language, currency, motivation quote), <strong>Modes</strong>, <strong>Workout plan</strong> and <strong>About</strong>.</li>
+    <li>Menu (☰) → <strong>Settings</strong>. Sections: <strong>General</strong> (language, currency, motivation quote), <strong>Modes</strong>, <strong>Card order</strong>, <strong>Workout plan</strong> and <strong>About</strong>.</li>
     <li><strong>Appearance:</strong> Liftloq is dark-only. The app and both home-screen widgets always use the dark theme (with your wallpaper colours on Android 12+), even when the phone is set to light mode.</li>
     <li><strong>Modes:</strong> turn <strong>Bodybuilding</strong> or <strong>HYROX (beta)</strong> off to hide everything for that mode (calendar entries, legend, stats, menu pages). Nothing is deleted; turning it back on restores it. One of the two must stay on. <strong>Supps money pit</strong> has its own switch, separate from that rule: off hides the Supps page from the menu and swipe cycle (purchases are kept).</li>
+    <li><strong>Card order:</strong> use the ↑ / ↓ buttons to set the order of the cards in the menu and in the swipe cycle. Changes apply right away. Cards switched off in Modes are dimmed and marked <strong>Hidden</strong>; you can still move them, and they are skipped until you turn them back on. Settings is always last in the menu and is never part of the swipe cycle.</li>
     <li>A language change is applied when you tap <strong>Save</strong> (bottom right).</li>
   </ol>
 
@@ -143,17 +144,21 @@
     <figcaption>Settings → Modes: Bodybuilding, HYROX (beta) and Supps money pit.</figcaption>
   </figure>
   <figure>
+    <img src="images/help-card-order.webp" alt="Settings Card order section with up and down buttons for each card" loading="lazy" width="540" height="1200" />
+    <figcaption>Settings → Card order: menu and swipe order; Settings always last.</figcaption>
+  </figure>
+  <figure>
     <img src="images/help-settings-end.webp" alt="Settings with Workout plan and About sections" loading="lazy" width="540" height="1200" />
     <figcaption>Workout plan (export/import) and About.</figcaption>
   </figure>
   <h2>7. Export / import</h2>
   <ol class="steps">
-    <li>Settings → <strong>Workout plan</strong> → <strong>Export workout plan</strong> saves a JSON backup (types, days, notes, supplements and HYROX data).</li>
-    <li><strong>Import workout plan</strong> replaces your data from such a file, after a confirmation. Days with more than 3 entries keep the first 3.</li>
+    <li>Settings → <strong>Workout plan</strong> → <strong>Export workout plan</strong> saves a JSON backup (types, days, notes, supplements, HYROX data, and your card order and Modes switches).</li>
+    <li><strong>Import workout plan</strong> replaces your data from such a file, after a confirmation. Days with more than 3 entries keep the first 3. Files from older versions have no card settings, so the default order is used and all cards are turned on.</li>
   </ol>
 
   <div class="tip">
-    <strong>Tip:</strong> Swipe left below the calendar to cycle <strong>Calendar → Bodybuilding → HYROX β → Stats → Supps money pit</strong>. Pages for a mode that is off are skipped. Settings stays in the menu only.
+    <strong>Tip:</strong> Swipe left below the calendar to cycle through the cards in your <strong>Card order</strong> (default: <strong>Calendar → Bodybuilding → HYROX β → Stats → Supps money pit</strong>). Pages for a mode that is off are skipped. Settings stays in the menu only.
   </div>
 
   <h2>Privacy &amp; contact</h2>
