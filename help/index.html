@@ -21,7 +21,7 @@
 </head>
 <body>
   <h1>How to use Liftloq</h1>
-  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.2.2</p>
+  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.3.0</p>
 
   <p>Liftloq keeps your workout plan on your device. Mark days on the calendar, manage workout types, plan and time HYROX workouts, and optionally track supplement spending — without signing in.</p>
 
@@ -54,7 +54,39 @@
     <figcaption>Bodybuilding: delete with trash, add with <strong>+</strong>.</figcaption>
   </figure>
 
-  <h2>3. Track supplements (Supps money pit)</h2>
+  <h2>3. Advanced bodybuilding (exercise log)</h2>
+  <ol class="steps">
+    <li>Bodybuilding has two modes. <strong>Simple</strong> (default) works exactly as before: you mark a day with a workout type. <strong>Advanced</strong> also lets you log the exercises, sets, reps and kg of that day.</li>
+    <li>Turn it on in Settings → <strong>Modes</strong>: under <strong>Bodybuilding</strong>, tap <strong>Advanced</strong>. The switch is only shown while Bodybuilding is on.</li>
+    <li>On a day, open the <strong>Bodybuilding</strong> section, pick a type, then tap <strong>Log exercises</strong>. The day is saved and the exercise log opens.</li>
+    <li>Tap <strong>+ Exercise</strong> and pick one from the list, grouped by muscle (Chest, Back, Shoulders, Biceps, Triceps, Legs, Calves, Core). The new exercise opens with one set; fill in reps and kg, tick <strong>Done</strong>, and add more with <strong>+ Set</strong>. Sets, reps and kg are optional.</li>
+    <li>Tap an exercise card to open or close it. Use ⋮ to move it up or down, and the red trash button to remove it. Tap <strong>Save</strong> to keep the log, or <strong>Cancel</strong> to discard the changes.</li>
+    <li>Missing an exercise? At the bottom of the list, tap <strong>+ Custom exercise</strong>, enter a name, choose the muscle group and tap <strong>Save</strong>. It is added to the log and listed in its group from then on.</li>
+    <li>Switching back to Simple only hides the log; nothing is deleted. <strong>Clear day</strong> in Advanced mode also clears that day’s exercise log.</li>
+  </ol>
+
+  <figure>
+    <img src="images/help-bb-modes.webp" alt="Settings Modes with the Simple and Advanced switch under Bodybuilding" loading="lazy" width="540" height="1200" />
+    <figcaption>Settings → Modes: <strong>Simple</strong> | <strong>Advanced</strong> under Bodybuilding.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-bb-day-entry.webp" alt="Day sheet with the Log exercises button under the selected Bodybuilding type" loading="lazy" width="540" height="1200" />
+    <figcaption>Day sheet in Advanced mode: <strong>Log exercises</strong> under the selected type.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-bb-log.webp" alt="Exercise log with three exercise cards; the last one is open with sets, reps, kg and done" loading="lazy" width="540" height="1200" />
+    <figcaption>Exercise log: one card open with its sets; <strong>+ Set</strong> adds a row.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-bb-picker.webp" alt="Add exercise list grouped by muscle with sticky group headers" loading="lazy" width="540" height="1200" />
+    <figcaption><strong>+ Exercise</strong>: exercises grouped by muscle.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-bb-custom.webp" alt="Custom exercise sheet with Name and Muscle group" loading="lazy" width="540" height="1200" />
+    <figcaption><strong>+ Custom exercise</strong>: Name is required.</figcaption>
+  </figure>
+
+  <h2>4. Track supplements (Supps money pit)</h2>
   <ol class="steps">
     <li>Open the menu (☰) → <strong>Supps money pit</strong>.</li>
     <li>Tap <strong>+</strong> to add a purchase (name, price, date), then tap <strong>Save</strong>.</li>
@@ -68,7 +100,7 @@
     <figcaption>Supps money pit: tap <strong>+</strong> to add a purchase, then <strong>Save</strong>.</figcaption>
   </figure>
 
-  <h2>4. HYROX β</h2>
+  <h2>5. HYROX β</h2>
   <ol class="steps">
     <li><strong>Builder:</strong> menu (☰) → <strong>HYROX (beta)</strong> → <strong>+</strong>. Name the workout, pick a colour and division, then tap <strong>+ Segment</strong> to pick a run or station from the list (sorted into Runs and Stations). While the list is still empty, <strong>+ Full race</strong> next to it adds the 16 official segments. A new segment opens ready to edit (distance or reps, weight); tap any card to open it, use <strong>⋮</strong> → <strong>Move up</strong> / <strong>Move down</strong> to reorder, and the red trash to delete it (you confirm first). The list scrolls under the floating <strong>Cancel</strong> and <strong>Save</strong> buttons (bottom right). If the name is empty, Save scrolls back to the <strong>Name</strong> field and shows <strong>Name required</strong>. When editing an existing workout, <strong>Delete</strong> is next to the title.</li>
     <li><strong>Delete:</strong> on the HYROX list, tap the red trash on a workout (or Delete inside the editor). Confirm — sessions are removed and the workout is cleared from every calendar day. Official race is not re-seeded after you delete it.</li>
@@ -119,7 +151,7 @@
     <img src="images/help-stats-hyrox.webp" alt="Stats HYROX tab" loading="lazy" width="540" height="1200" />
     <figcaption>Stats → HYROX β: History on top, then templates and best splits.</figcaption>
   </figure>
-  <h2>5. Stats</h2>
+  <h2>6. Stats</h2>
   <ol class="steps">
     <li>Menu (☰) → <strong>Stats</strong>. The bottom toggle has <strong>Days since</strong> (opens first), <strong>Overview</strong> and <strong>HYROX β</strong> (only while HYROX is on).</li>
     <li><strong>Days since</strong> shows how long ago you last did each type: green 0–3 days, yellow 4–6, red 7 or more (or never).</li>
@@ -130,7 +162,7 @@
     <img src="images/help-stats-days-since.webp" alt="Stats Days since tab with green, yellow and red chips" loading="lazy" width="540" height="1200" />
     <figcaption>Stats opens on Days since; swipe up for Overview and HYROX β.</figcaption>
   </figure>
-  <h2>6. Settings: sections and toggles</h2>
+  <h2>7. Settings: sections and toggles</h2>
   <ol class="steps">
     <li>Menu (☰) → <strong>Settings</strong>. Sections: <strong>General</strong> (language, currency, motivation quote), <strong>Modes</strong>, <strong>Card order</strong>, <strong>Workout plan</strong> and <strong>About</strong>.</li>
     <li><strong>Appearance:</strong> Liftloq is dark-only. The app and both home-screen widgets always use the dark theme (with your wallpaper colours on Android 12+), even when the phone is set to light mode.</li>
@@ -151,10 +183,10 @@
     <img src="images/help-settings-end.webp" alt="Settings with Workout plan and About sections" loading="lazy" width="540" height="1200" />
     <figcaption>Workout plan (export/import) and About.</figcaption>
   </figure>
-  <h2>7. Export / import</h2>
+  <h2>8. Export / import</h2>
   <ol class="steps">
-    <li>Settings → <strong>Workout plan</strong> → <strong>Export workout plan</strong> saves a JSON backup (types, days, notes, supplements, HYROX data, and your card order and Modes switches).</li>
-    <li><strong>Import workout plan</strong> replaces your data from such a file, after a confirmation. Days with more than 3 entries keep the first 3. Files from older versions have no card settings, so the default order is used and all cards are turned on.</li>
+    <li>Settings → <strong>Workout plan</strong> → <strong>Export workout plan</strong> saves a JSON backup (types, days, notes, supplements, HYROX data, your card order and Modes switches, and the Advanced bodybuilding log with your custom exercises).</li>
+    <li><strong>Import workout plan</strong> replaces your data from such a file, after a confirmation. Days with more than 3 entries keep the first 3. Files from older versions have no card settings, so the default order is used and all cards are turned on. They also have no Advanced bodybuilding data: Bodybuilding is set to Simple and your exercise log on this phone is kept.</li>
   </ol>
 
   <div class="tip">
