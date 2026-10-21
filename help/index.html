@@ -21,7 +21,7 @@
 </head>
 <body>
   <h1>How to use Liftloq</h1>
-  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.3.3</p>
+  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.3.4</p>
 
   <p>Liftloq keeps your workout plan on your device. Mark days on the calendar, manage workout types, plan and time HYROX workouts, and optionally track supplement spending — without signing in.</p>
 
@@ -30,7 +30,8 @@
     <li>Open <strong>Calendar</strong> (home).</li>
     <li>Tap a day (or the add button). The day sheet has collapsible <strong>Bodybuilding</strong>, <strong>HYROX workouts</strong> and <strong>Notes</strong> sections.</li>
     <li>Pick up to <strong>three</strong> entries in total (Bodybuilding types and HYROX workouts combined). At 3, the other picks are disabled until you deselect one. HYROX rows have a checkbox: a picked row says <strong>Tap to unselect</strong>; tap it again to remove it.</li>
-    <li>Tap <strong>Save</strong>. Nothing is stored until you save.</li>
+    <li>Tap <strong>Save</strong>. Nothing is stored until you save. <strong>Clear day</strong>, <strong>Cancel</strong> and <strong>Save</strong> float in a bar at the bottom of the sheet; everything scrolls up clear above it, Notes included (also with the keyboard open).</li>
+    <li><strong>Save an empty day:</strong> to remove a workout, unmark it (tap its chip, or a HYROX row’s checkbox) and tap <strong>Save</strong>. Save works even when the day ends up with nothing selected; the day’s workouts are cleared and its note stays unless you clear the note too. On a new day with nothing picked, Save stays off. <strong>Clear day</strong> removes everything at once, note included.</li>
     <li>The day shows one colour band per entry: Bodybuilding first, then HYROX.</li>
   </ol>
 
@@ -39,8 +40,12 @@
     <figcaption>Calendar: tap a day to open it. Each day shows up to 3 colour bands; names appear with 1–2 entries.</figcaption>
   </figure>
   <figure>
-    <img src="images/help-day-sheet.webp" alt="Day sheet with HYROX checkboxes" loading="lazy" width="540" height="1200" />
-    <figcaption>Day sheet: HYROX workouts with checkboxes; the picked one shows <strong>Tap to unselect</strong>. At 3 of 3 picked, the rest is disabled.</figcaption>
+    <img src="images/help-day-sheet.webp" alt="Day sheet with Bodybuilding, HYROX workouts and Notes sections and a floating bar with Clear day, Cancel and Save" loading="lazy" width="540" height="1200" />
+    <figcaption>Day sheet: Bodybuilding, HYROX workouts and Notes; at 3 of 3 picked, the rest is disabled. Clear day, Cancel and Save float at the bottom.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-day-empty-save.webp" alt="Day sheet with no workout selected and Save enabled" loading="lazy" width="540" height="1200" />
+    <figcaption>Push unmarked: <strong>None selected</strong>, and Save clears the day’s workout.</figcaption>
   </figure>
   <h2>2. Add and remove Bodybuilding types</h2>
   <ol class="steps">
@@ -63,7 +68,7 @@
     <li>Doing something extra today? Tap <strong>+ Exercise for this day</strong>. It is marked <strong>This day only</strong> and does not change the type.</li>
     <li>Tap <strong>Save</strong> on the day sheet to keep the day and its sets. If you change a type’s exercises later, days you already logged stay as they were.</li>
     <li>Missing an exercise? At the bottom of the list, tap <strong>+ Custom exercise</strong>, enter a name, choose the muscle group and tap <strong>Save</strong>. It is listed in its group from then on.</li>
-    <li>Logs from version 2.3.0 are kept as <strong>This day only</strong> exercises, and each type starts with the exercises of its most recent logged day. Switching back to Simple only hides all of this; nothing is deleted. <strong>Clear day</strong> in Advanced mode also clears that day’s exercises.</li>
+    <li>Logs from version 2.3.0 are kept as <strong>This day only</strong> exercises, and each type starts with the exercises of its most recent logged day. Switching back to Simple only hides all of this; nothing is deleted. Unmarking a type on a day and saving removes that type’s exercises from the day (<strong>This day only</strong> exercises stay). <strong>Clear day</strong> in Advanced mode also clears that day’s exercises.</li>
   </ol>
 
   <figure>
@@ -84,7 +89,7 @@
   </figure>
   <figure>
     <img src="images/help-bb-day-extra.webp" alt="Day sheet with the type’s exercises and an extra Plank marked This day only, and the Exercise for this day button" loading="lazy" width="540" height="1200" />
-    <figcaption><strong>+ Exercise for this day</strong> adds an extra marked <strong>This day only</strong>.</figcaption>
+    <figcaption><strong>+ Exercise for this day</strong> adds an extra marked <strong>This day only</strong>. The sheet scrolls clear above the Clear day / Cancel / Save bar.</figcaption>
   </figure>
   <figure>
     <img src="images/help-bb-picker.webp" alt="Add exercise list grouped by muscle with sticky group headers; every exercise has the dumbbell icon" loading="lazy" width="540" height="1200" />
