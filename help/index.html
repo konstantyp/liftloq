@@ -21,7 +21,7 @@
 </head>
 <body>
   <h1>How to use Liftloq</h1>
-  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.4.0 (Progress tab in Stats; Last time, Copy last, PR badges and exercise history on the day sheet)</p>
+  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.4.1 (Auto export: a backup in a folder you choose, updated after every change)</p>
 
   <p>Liftloq keeps your workout plan on your device. Mark days on the calendar, manage workout types, plan and time HYROX workouts, and optionally track supplement spending — without signing in.</p>
 
@@ -258,6 +258,27 @@
     <li>Settings → <strong>Workout plan</strong> → <strong>Export workout plan</strong> saves a JSON backup (types, days, notes, supplements, HYROX data, your card order and Modes switches, and the Advanced bodybuilding data: the exercises on your workout types, the exercise log and your custom exercises).</li>
     <li><strong>Import workout plan</strong> replaces your data from such a file, after a confirmation. Days with more than 3 entries keep the first 3. Files from older versions have no card settings, so the default order is used and all cards are turned on. They also have no Advanced bodybuilding data: Bodybuilding is set to Simple and your exercise log on this phone is kept. Files from 2.3.0 have no exercises on workout types, so the ones on this phone are kept.</li>
   </ol>
+
+  <h3>Auto export</h3>
+  <ol class="steps">
+    <li>Settings → <strong>Workout plan</strong> → turn on <strong>Auto export</strong>. Android’s folder picker opens (in Documents): open or create a folder, for example <strong>Liftloq</strong>, tap <strong>Use this folder</strong> and allow access. If you cancel, Auto export stays off.</li>
+    <li>Liftloq writes one file there, <strong>liftloq-backup.json</strong>, right away and again right after every change: days, types, notes, HYROX, the bodybuilding log, purchases and the settings that are part of the backup. It is the same file as <strong>Export workout plan</strong>, so <strong>Import workout plan</strong> can restore it. The file is replaced each time; no dated copies pile up.</li>
+    <li><strong>Change folder</strong> (shown while Auto export is on) picks another folder. It also shows when the last auto export happened.</li>
+    <li>Turning Auto export off stops the backups and gives back the folder access; the file already written stays. The folder setting is not part of the backup itself, so on a new phone you choose a folder again.</li>
+    <li>If the folder is deleted or Liftloq’s access to it is removed, Auto export turns itself off and shows <strong>Folder access was removed. Turn on to choose a folder again.</strong></li>
+  </ol>
+  <figure>
+    <img src="images/help-auto-export-off.webp" alt="Settings Workout plan section: Export, Import and the Auto export switch turned off" loading="lazy" width="540" height="486" />
+    <figcaption>Settings → Workout plan: <strong>Auto export</strong> is off.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-auto-export-on.webp" alt="Auto export on, backing up to Documents/Liftloq, with the Change folder row showing Last auto export: 23 Oct, 17:05" loading="lazy" width="540" height="624" />
+    <figcaption>On: the folder is named under the switch; <strong>Change folder</strong> shows the last auto export.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-auto-export-revoked.webp" alt="Auto export turned off with the red hint Folder access was removed. Turn on to choose a folder again." loading="lazy" width="540" height="516" />
+    <figcaption>Folder access lost: Auto export is off again, with a hint to choose a folder.</figcaption>
+  </figure>
 
   <div class="tip">
     <strong>Tip:</strong> Swipe left below the calendar to cycle through the cards in your <strong>Card order</strong> (default: <strong>Calendar → Bodybuilding → HYROX → Stats → Supps money pit</strong>). Pages for a mode that is off are skipped. Settings stays in the menu only.
