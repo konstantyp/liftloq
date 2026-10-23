@@ -21,7 +21,7 @@
 </head>
 <body>
   <h1>How to use Liftloq</h1>
-  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.4.1 (Auto export: a backup in a folder you choose, updated after every change)</p>
+  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.4.2 (Progress chart shows several dates; backups include the Auto export settings)</p>
 
   <p>Liftloq keeps your workout plan on your device. Mark days on the calendar, manage workout types, plan and time HYROX workouts, and optionally track supplement spending — without signing in.</p>
 
@@ -201,11 +201,20 @@
     <li>Stats → <strong>Progress</strong> (the chart icon, last in the toggle) charts one exercise over time. Pick it under <strong>Exercise</strong>; the list only has exercises you have logged with at least one filled set. It starts on the one you logged most recently.</li>
     <li><strong>Top set</strong> (default) is your heaviest kg on each day. <strong>Volume</strong> adds up reps × kg for the day. <strong>Estimated 1RM</strong> estimates your one-rep max from sets of 1–12 reps. Empty sets don’t count, and a day without a value is simply skipped.</li>
     <li>Below the title: <strong>Best</strong>, <strong>Latest</strong> and <strong>Change</strong> (in kg and %) for the chosen range. Choose the range with <strong>4W · 3M · 6M · 1Y · All</strong> (3M first). Tap a point on the chart to see its date and value.</li>
+    <li>Under the chart, 3–4 dates are spread evenly across the range: the first and the last session always, and evenly spaced dates in between, so even a short range of a few days shows several dates. If there isn’t room at a larger text size, fewer dates are shown so they never overlap. For <strong>1Y</strong> and <strong>All</strong>, when the range crosses into a new year, the dates show month and year (for example <strong>Nov 25</strong>).</li>
     <li>Exercises without kg (for example pull-ups) show <strong>Max reps</strong> instead, and Volume becomes total reps. With only one session there is a single dot and “Log another session to see a trend.”</li>
   </ol>
   <figure>
     <img src="images/help-progress-top-set.webp" alt="Stats Progress tab: Bench press top set chart over 3 months with Best 92.5 kg, Latest 90 kg and Change +7.5 kg, and the icon-only bottom toggle" loading="lazy" width="540" height="1200" />
     <figcaption>Progress: Bench press top set over 3 months, with Best, Latest and Change. The toggle at the bottom shows icons while Progress is there.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-progress-dates.webp" alt="Progress for Squat over six days: the dates 14 Oct, 16 Oct, 17 Oct and 19 Oct under the chart" loading="lazy" width="540" height="1019" />
+    <figcaption>A short range still shows several dates, from the first session to the last.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-progress-dates-1y.webp" alt="Progress for Deadlift over 1Y from November 2025 to October 2026: the dates Nov 25, Feb 26, Jun 26 and Oct 26" loading="lazy" width="540" height="1019" />
+    <figcaption><strong>1Y</strong> across a new year: the dates show month and year.</figcaption>
   </figure>
   <figure>
     <img src="images/help-progress-picker.webp" alt="Exercise picker open with Bench press, Incline dumbbell press, Deadlift, Pull-up and Overhead press" loading="lazy" width="540" height="1019" />
@@ -264,7 +273,8 @@
     <li>Settings → <strong>Workout plan</strong> → turn on <strong>Auto export</strong>. Android’s folder picker opens (in Documents): open or create a folder, for example <strong>Liftloq</strong>, tap <strong>Use this folder</strong> and allow access. If you cancel, Auto export stays off.</li>
     <li>Liftloq writes one file there, <strong>liftloq-backup.json</strong>, right away and again right after every change: days, types, notes, HYROX, the bodybuilding log, purchases and the settings that are part of the backup. It is the same file as <strong>Export workout plan</strong>, so <strong>Import workout plan</strong> can restore it. The file is replaced each time; no dated copies pile up.</li>
     <li><strong>Change folder</strong> (shown while Auto export is on) picks another folder. It also shows when the last auto export happened.</li>
-    <li>Turning Auto export off stops the backups and gives back the folder access; the file already written stays. The folder setting is not part of the backup itself, so on a new phone you choose a folder again.</li>
+    <li>Turning Auto export off stops the backups and gives back the folder access; the file already written stays.</li>
+    <li>The backup also includes the Auto export settings (on or off, the folder and the last export time). When you import it on the same phone, Auto export goes back to that folder. On a new phone (or if Liftloq can no longer use that folder) Auto export stays off and shows <strong>Folder access was removed. Turn on to choose a folder again.</strong>: turn it on and pick the folder again. Files from older versions don’t have these settings, so importing them leaves Auto export as it is.</li>
     <li>If the folder is deleted or Liftloq’s access to it is removed, Auto export turns itself off and shows <strong>Folder access was removed. Turn on to choose a folder again.</strong></li>
   </ol>
   <figure>
