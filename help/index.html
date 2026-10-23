@@ -21,7 +21,7 @@
 </head>
 <body>
   <h1>How to use Liftloq</h1>
-  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.3.5 (library updates under the hood; nothing changes in how you use the app)</p>
+  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.4.0 (Progress tab in Stats; Last time, Copy last, PR badges and exercise history on the day sheet)</p>
 
   <p>Liftloq keeps your workout plan on your device. Mark days on the calendar, manage workout types, plan and time HYROX workouts, and optionally track supplement spending — without signing in.</p>
 
@@ -100,6 +100,26 @@
     <figcaption><strong>+ Custom exercise</strong>: Name is required.</figcaption>
   </figure>
 
+  <h3>Last time and records</h3>
+  <ol class="steps">
+    <li>In Advanced mode, an open exercise card on a day shows <strong>Last</strong>: the date and sets (kg × reps) of the last earlier day you logged that exercise, for example “Last · Fri 16 Oct · 80×8 · 80×8 · 82.5×6”. If you have never logged it before, there is no Last row.</li>
+    <li><strong>Copy last</strong> (next to <strong>+ Set</strong>) fills only the <strong>empty</strong> set rows from that last session, set by set: set 2 gets last time’s set 2, and so on. Sets you already typed are never changed, and no rows are added. The button is greyed out when there is no last session or nothing left to fill. Cancel still discards it.</li>
+    <li>A <strong>PR</strong> badge under a set number means a new personal record: that set’s kg is higher than your heaviest set on any earlier day. Only the heaviest set of the day gets it; matching your best is not a PR, and your first session never has one.</li>
+    <li>Tap the history button on the Last row to see every session of that exercise, newest first, grouped by month, with your best top set at the top. Sessions that set a record carry the same <strong>PR</strong> badge.</li>
+  </ol>
+  <figure>
+    <img src="images/help-day-last-time.webp" alt="Day sheet: Bench press card with the Last row (Fri 16 Oct, 80×8 · 80×8 · 82.5×6), a history button and Copy last next to + Set" loading="lazy" width="540" height="1056" />
+    <figcaption>The <strong>Last</strong> row above the sets, and <strong>Copy last</strong> next to <strong>+ Set</strong>.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-day-copy-last-pr.webp" alt="Bench press after Copy last: sets 2 and 3 filled from last time, set 4 at 85 kg marked PR, Copy last greyed out" loading="lazy" width="540" height="1158" />
+    <figcaption>After <strong>Copy last</strong>: sets 2–3 came from last time, set 1 and set 4 were typed. 85 kg beats the earlier best of 82.5 kg, so set 4 gets <strong>PR</strong>. Nothing is left to fill, so Copy last is greyed out.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-day-history.webp" alt="Bench press history sheet: sessions newest first under October 2026 and September 2026 headers, with PR badges on record sessions" loading="lazy" width="540" height="1108" />
+    <figcaption>History: every session of the exercise by month, newest first. <strong>PR</strong> marks sessions that beat all earlier ones.</figcaption>
+  </figure>
+
   <h2>4. Track supplements (Supps money pit)</h2>
   <ol class="steps">
     <li>Open the menu (☰) → <strong>Supps money pit</strong>.</li>
@@ -167,14 +187,45 @@
   </figure>
   <h2>6. Stats</h2>
   <ol class="steps">
-    <li>Menu (☰) → <strong>Stats</strong>. The bottom toggle has <strong>Days since</strong> (opens first), <strong>Overview</strong> and <strong>HYROX</strong> (only while HYROX is on).</li>
+    <li>Menu (☰) → <strong>Stats</strong>. The bottom toggle has <strong>Days since</strong> (opens first), <strong>Overview</strong>, <strong>HYROX</strong> (only while HYROX is on) and <strong>Progress</strong> (only in Advanced bodybuilding). While Progress is there, the toggle shows icons only.</li>
     <li><strong>Days since</strong> shows how long ago you last did each type: green 0–3 days, yellow 4–6, red 7 or more (or never).</li>
     <li><strong>Overview</strong> shows this week or month by type; <strong>HYROX</strong> shows History, templates and best splits.</li>
-    <li><strong>Swipe up</strong> to go to the next tab: Days since → Overview → HYROX → Days since. Long tabs scroll normally first; the tab only changes when you keep swiping up at the bottom. The toggle follows.</li>
+    <li><strong>Swipe up</strong> to go to the next tab: Days since → Overview → HYROX → Progress → Days since. Long tabs scroll normally first; the tab only changes when you keep swiping up at the bottom. The toggle follows.</li>
   </ol>
   <figure>
     <img src="images/help-stats-days-since.webp" alt="Stats Days since tab with green, yellow and red chips" loading="lazy" width="540" height="882" />
-    <figcaption>Stats opens on Days since; swipe up for Overview and HYROX.</figcaption>
+    <figcaption>Stats opens on Days since; swipe up for Overview, HYROX and Progress.</figcaption>
+  </figure>
+  <h3>Progress (Advanced bodybuilding)</h3>
+  <ol class="steps">
+    <li>Stats → <strong>Progress</strong> (the chart icon, last in the toggle) charts one exercise over time. Pick it under <strong>Exercise</strong>; the list only has exercises you have logged with at least one filled set. It starts on the one you logged most recently.</li>
+    <li><strong>Top set</strong> (default) is your heaviest kg on each day. <strong>Volume</strong> adds up reps × kg for the day. <strong>Estimated 1RM</strong> estimates your one-rep max from sets of 1–12 reps. Empty sets don’t count, and a day without a value is simply skipped.</li>
+    <li>Below the title: <strong>Best</strong>, <strong>Latest</strong> and <strong>Change</strong> (in kg and %) for the chosen range. Choose the range with <strong>4W · 3M · 6M · 1Y · All</strong> (3M first). Tap a point on the chart to see its date and value.</li>
+    <li>Exercises without kg (for example pull-ups) show <strong>Max reps</strong> instead, and Volume becomes total reps. With only one session there is a single dot and “Log another session to see a trend.”</li>
+  </ol>
+  <figure>
+    <img src="images/help-progress-top-set.webp" alt="Stats Progress tab: Bench press top set chart over 3 months with Best 92.5 kg, Latest 90 kg and Change +7.5 kg, and the icon-only bottom toggle" loading="lazy" width="540" height="1200" />
+    <figcaption>Progress: Bench press top set over 3 months, with Best, Latest and Change. The toggle at the bottom shows icons while Progress is there.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-progress-picker.webp" alt="Exercise picker open with Bench press, Incline dumbbell press, Deadlift, Pull-up and Overhead press" loading="lazy" width="540" height="1019" />
+    <figcaption><strong>Exercise</strong>: only exercises you have logged are listed.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-progress-volume.webp" alt="Progress with Volume selected: reps × kg per day" loading="lazy" width="540" height="1019" />
+    <figcaption><strong>Volume</strong>: reps × kg per day.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-progress-bodyweight.webp" alt="Progress for Pull-up: Max reps per day, bodyweight" loading="lazy" width="540" height="1019" />
+    <figcaption>An exercise without kg shows <strong>Max reps</strong>.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-progress-single.webp" alt="Progress with a single session: one dot and a hint to log another session" loading="lazy" width="540" height="1046" />
+    <figcaption>One session so far: a single dot, and Change shows “—”.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/help-progress-empty.webp" alt="Progress with nothing logged yet: No progress yet" loading="lazy" width="540" height="612" />
+    <figcaption>Nothing logged yet: <strong>No progress yet</strong>, with a hint to log sets with kg in a day sheet.</figcaption>
   </figure>
   <h2>7. Settings: sections and toggles</h2>
   <ol class="steps">
