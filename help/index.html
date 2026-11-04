@@ -28,7 +28,7 @@
     <img src="../assets/liftloq-logo-light.svg" alt="Liftloq" width="198" height="56" />
   </picture>
   <h1>How to use Liftloq</h1>
-  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.7.4</p>
+  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.7.5</p>
 
   <p>Liftloq keeps your workout plan on your device. Mark days on the calendar, manage workout types, plan and time HYROX workouts, and optionally track supplement spending — without signing in.</p>
 
@@ -70,6 +70,16 @@
   <figure>
     <img src="images/help-workout-types.webp" alt="Bodybuilding types list with delete and plus button" loading="lazy" width="540" height="504" />
     <figcaption>Bodybuilding: delete with trash, add with <strong>+</strong>.</figcaption>
+  </figure>
+  <h3 id="sessions-per-week">Sessions per week</h3>
+  <ol class="steps">
+    <li>Open a Bodybuilding type (tap it, or <strong>+</strong> for a new one). Below <strong>Brightness</strong>, <strong>Sessions per week</strong> sets how often you want to train it: <strong>Off</strong> or <strong>1</strong>–<strong>7</strong>. Then tap <strong>Save</strong>. It works the same in Simple and Advanced bodybuilding; a new type starts at Off.</li>
+    <li>The target sets the colours in Stats › <strong>Days since</strong> for that type. With a target of <em>t</em> sessions a week, the chip is <strong>green</strong> up to 7 ÷ <em>t</em> days (rounded down), <strong>red</strong> from 14 ÷ <em>t</em> days (rounded up), and <strong>yellow</strong> in between. A type you have never logged is red.</li>
+    <li>For example: at 3 a week it is green for 0–2 days, yellow for 3–4 and red from 5; at 1 a week, green up to 7 days, yellow 8–13 and red from 14. With <strong>Off</strong> the usual colours apply: green 0–3 days, yellow 4–6, red 7 or more.</li>
+  </ol>
+  <figure>
+    <img src="images/help-bb-sessions-per-week.webp" alt="Edit type sheet for Push with Sessions per week buttons Off and 1 to 7, 3 selected, above Cancel and Save" loading="lazy" width="540" height="986" />
+    <figcaption>Push set to 3 sessions per week.</figcaption>
   </figure>
 
   <h2>3. Advanced bodybuilding (exercises on workout types)</h2>
@@ -201,13 +211,13 @@
   <h2>6. Stats</h2>
   <ol class="steps">
     <li>Menu → <strong>Stats</strong>. The bottom toggle has <strong>Days since</strong> (opens first), <strong>Overview</strong>, <strong>HYROX</strong> (only while HYROX is on) and <strong>Progress</strong> (only in Advanced bodybuilding). While Progress is there, the toggle shows icons only.</li>
-    <li><strong>Days since</strong> shows how long ago you last did each type: green 0–3 days, yellow 4–6, red 7 or more (or never).</li>
+    <li><strong>Days since</strong> shows how long ago you last did each type, longest first (types you have never logged at the top): green 0–3 days, yellow 4–6, red 7 or more (or never). A type with a <a href="#sessions-per-week">Sessions per week</a> target uses colours scaled to that target instead.</li>
     <li><strong>Overview</strong> shows this week or month by type; <strong>HYROX</strong> shows History, templates and best splits.</li>
     <li><strong>Swipe up</strong> to go to the next tab: Days since → Overview → HYROX → Progress → Days since. Long tabs scroll normally first; the tab only changes when you keep swiping up at the bottom. The toggle follows.</li>
   </ol>
   <figure>
-    <img src="images/help-stats-days-since.webp" alt="Stats Days since tab with green, yellow and red chips" loading="lazy" width="540" height="882" />
-    <figcaption>Stats opens on Days since; swipe up for Overview, HYROX and Progress.</figcaption>
+    <img src="images/help-stats-days-since.webp" alt="Stats Days since tab sorted longest first: Core never, Legs 9 days, Push 5 days, Arms 3 days, Pull 2 days, with red, yellow and green chips" loading="lazy" width="540" height="806" />
+    <figcaption>Stats opens on Days since, longest first. With targets (Push 3, Pull 4, Legs 1, Arms 2 a week): Push is red at 5 days, Legs yellow at 9; Core has no target and was never logged.</figcaption>
   </figure>
   <h3>Progress (Advanced bodybuilding)</h3>
   <ol class="steps">
