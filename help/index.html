@@ -28,7 +28,7 @@
     <img src="../assets/liftloq-logo-light.svg" alt="Liftloq" width="198" height="56" />
   </picture>
   <h1>How to use Liftloq</h1>
-  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.7.5</p>
+  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.7.6</p>
 
   <p>Liftloq keeps your workout plan on your device. Mark days on the calendar, manage workout types, plan and time HYROX workouts, and optionally track supplement spending — without signing in.</p>
 
@@ -40,6 +40,7 @@
     <li>Tap <strong>Save</strong>. Nothing is stored until you save. <strong>Clear day</strong>, <strong>Cancel</strong> and <strong>Save</strong> float in a bar at the bottom of the sheet; everything scrolls up clear above it, Notes included (also with the keyboard open).</li>
     <li><strong>Save an empty day:</strong> to remove a workout, unmark it (tap its chip, or a HYROX row’s checkbox) and tap <strong>Save</strong>. Save works even when the day ends up with nothing selected; the day’s workouts are cleared and its note stays unless you clear the note too. On a new day with nothing picked, Save stays off. <strong>Clear day</strong> removes everything at once, note included.</li>
     <li>The day shows one colour band per entry: Bodybuilding first, then HYROX.</li>
+    <li>The days from the previous and next month at the start and end of the grid show their workouts too, slightly faded, so the current month stands out. The month widget shows them the same way.</li>
     <li><strong>Jump to a month:</strong> tap the month name at the top (it has a small ▾ arrow). <strong>Go to month</strong> opens with the year and all 12 months: the month you are looking at is filled, today’s month is outlined. Use ‹ › to change the year, then tap a month to jump there. <strong>This month</strong> jumps back to today; <strong>Cancel</strong> keeps the calendar where it was. The ‹ › arrows next to the title and swiping left or right on the month still move one month at a time.</li>
     <li>The <strong>menu</strong> button is the kettlebell at the top left of each page (in <strong>One-handed mode</strong> it is at the bottom; see <a href="#one-handed">One-handed mode</a>).</li>
   </ol>
@@ -47,6 +48,11 @@
   <figure>
     <img src="images/help-calendar.webp" alt="Liftloq Calendar month view" loading="lazy" width="540" height="888" />
     <figcaption>Calendar: tap a day to open it. Each day shows up to 3 colour bands; the type name appears when there is 1 entry. Tap the month name to jump to another month.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/help-calendar-overlap.webp" alt="November 2026 month grid: October 26, 27, 29 and 31 and December 2 and 4 show Pull, Legs, Push and Cardio workouts in faded colours; November days are at full colour" loading="lazy" width="540" height="486" />
+    <figcaption>Days from October and December keep their workouts, slightly faded.</figcaption>
   </figure>
   <figure>
     <img src="images/help-month-picker.webp" alt="Go to month dialog: the year 2026 with arrows, a grid of the 12 months with October filled, and Cancel and This month buttons" loading="lazy" width="540" height="666" />
@@ -75,7 +81,7 @@
   <ol class="steps">
     <li>Open a Bodybuilding type (tap it, or <strong>+</strong> for a new one). Below <strong>Brightness</strong>, <strong>Sessions per week</strong> sets how often you want to train it: <strong>Off</strong> or <strong>1</strong>–<strong>7</strong>. Then tap <strong>Save</strong>. It works the same in Simple and Advanced bodybuilding; a new type starts at Off.</li>
     <li>The target sets the colours in Stats › <strong>Days since</strong> for that type. With a target of <em>t</em> sessions a week, the chip is <strong>green</strong> up to 7 ÷ <em>t</em> days (rounded down), <strong>red</strong> from 14 ÷ <em>t</em> days (rounded up), and <strong>yellow</strong> in between. A type you have never logged is red.</li>
-    <li>For example: at 3 a week it is green for 0–2 days, yellow for 3–4 and red from 5; at 1 a week, green up to 7 days, yellow 8–13 and red from 14. With <strong>Off</strong> the usual colours apply: green 0–3 days, yellow 4–6, red 7 or more.</li>
+    <li>For example: at 3 a week it is green for 0–2 days, yellow for 3–4 and red from 5; at 1 a week, green up to 7 days, yellow 8–13 and red from 14. With <strong>Off</strong> there is no target, so the chip has no warning colour: it uses the same purple as the card’s heading, also for a type you have never logged.</li>
   </ol>
   <figure>
     <img src="images/help-bb-sessions-per-week.webp" alt="Edit type sheet for Push with Sessions per week buttons Off and 1 to 7, 3 selected, above Cancel and Save" loading="lazy" width="540" height="986" />
@@ -211,13 +217,13 @@
   <h2>6. Stats</h2>
   <ol class="steps">
     <li>Menu → <strong>Stats</strong>. The bottom toggle has <strong>Days since</strong> (opens first), <strong>Overview</strong>, <strong>HYROX</strong> (only while HYROX is on) and <strong>Progress</strong> (only in Advanced bodybuilding). While Progress is there, the toggle shows icons only.</li>
-    <li><strong>Days since</strong> shows how long ago you last did each type, longest first (types you have never logged at the top): green 0–3 days, yellow 4–6, red 7 or more (or never). A type with a <a href="#sessions-per-week">Sessions per week</a> target uses colours scaled to that target instead.</li>
+    <li><strong>Days since</strong> shows how long ago you last did each type, longest first (types you have never logged at the top). A type with a <a href="#sessions-per-week">Sessions per week</a> target is green, yellow or red depending on how it is going against that target. A type with no target (Off) and HYROX types show a neutral chip in the heading’s purple.</li>
     <li><strong>Overview</strong> shows this week or month by type; <strong>HYROX</strong> shows History, templates and best splits.</li>
     <li><strong>Swipe up</strong> to go to the next tab: Days since → Overview → HYROX → Progress → Days since. Long tabs scroll normally first; the tab only changes when you keep swiping up at the bottom. The toggle follows.</li>
   </ol>
   <figure>
-    <img src="images/help-stats-days-since.webp" alt="Stats Days since tab sorted longest first: Core never, Legs 9 days, Push 5 days, Arms 3 days, Pull 2 days, with red, yellow and green chips" loading="lazy" width="540" height="806" />
-    <figcaption>Stats opens on Days since, longest first. With targets (Push 3, Pull 4, Legs 1, Arms 2 a week): Push is red at 5 days, Legs yellow at 9; Core has no target and was never logged.</figcaption>
+    <img src="images/help-stats-days-since.webp" alt="Stats Days since tab sorted longest first: Core never, Arms 10 days, Legs 9 days, Push 5 days, Pull 2 days; Legs is yellow, Push red, and Core, Arms and Pull have purple chips" loading="lazy" width="540" height="806" />
+    <figcaption>Stats opens on Days since, longest first. Push (3 a week) is red at 5 days and Legs (1 a week) yellow at 9; Core, Arms and Pull have no target, so their chips are purple.</figcaption>
   </figure>
   <h3>Progress (Advanced bodybuilding)</h3>
   <ol class="steps">
@@ -283,7 +289,7 @@
     <li>Turn the switch on: the row shows <strong>unsaved</strong>. Tap <strong>Save</strong> to apply it; the app reloads with the new layout. Leaving Settings without Save keeps the current layout. Turn it off the same way.</li>
     <li>When it is on, Calendar, Bodybuilding, HYROX, Stats and Supps cost have one button at the bottom centre, always in the same place. Its left half (the kettlebell) opens the menu; its right half is the page’s main action, the same as the round button in normal mode: add a workout today on the Calendar, and <strong>+</strong> on Bodybuilding, HYROX and Supps cost. Stats has no main action, so it shows only the menu button, below the Stats tabs.</li>
     <li>Settings keeps its usual <strong>Save</strong> button in the bottom-right corner, exactly as when One-handed mode is off. Settings has no menu button in this mode, so to leave it, use your phone’s back button or back gesture: it takes you to the Calendar. <strong>About Liftloq</strong> at the end of Settings opens the About page; its back arrow returns to Settings.</li>
-    <li>The menu opens as a panel from the bottom with the same pages as before. Swipe it down, tap outside it or press back to close it. In this mode the menu does not open by swiping in from the left edge; the other swipes (swiping up at the end of a list, swiping left below the calendar to the next card) work as before.</li>
+    <li>The menu opens as a panel from the bottom with the same pages as before. Swipe it down, tap outside it or press back to close it. Swiping in from the left edge opens the full side menu, the same as when One-handed mode is off; the other swipes (swiping up at the end of a list, swiping left below the calendar to the next card) work as before.</li>
     <li>The top-left menu button is hidden in this mode, on every page. Lists scroll underneath the bottom button, and the last item can always be scrolled clear of it. <strong>Start HYROX</strong> on the Calendar sits above it. During a HYROX race the race buttons are shown instead.</li>
   </ol>
   <figure>
