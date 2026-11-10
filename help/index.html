@@ -28,7 +28,7 @@
     <img src="../assets/liftloq-logo-light.svg" alt="Liftloq" width="198" height="56" />
   </picture>
   <h1>How to use Liftloq</h1>
-  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.8.1</p>
+  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.8.2</p>
 
   <p>Liftloq keeps your workout plan on your device. Mark days on the calendar, manage workout types, plan and time HYROX workouts, and optionally track supplement spending — without signing in.</p>
 
@@ -331,12 +331,15 @@
   <ol class="steps">
     <li>Settings → <strong>Workout plan</strong> → <strong>Export workout plan</strong> saves a JSON backup (types, days, notes, supplements, HYROX data, and the Advanced bodybuilding data: the exercises on your workout types, the exercise log and your custom exercises). It includes the settings you can change: language, currency, colour theme, <strong>One-handed mode</strong>, <strong>Show motivation quote</strong>, <strong>Track transitions</strong>, your card order and the Modes switches. <strong>Auto export</strong> writes this same file.</li>
     <li><strong>Import workout plan</strong> replaces your data from such a file, after a confirmation, including those settings. Days with more than 3 entries keep the first 3. Older backups still import. Files from older versions have no card settings, so the default order is used and all cards are turned on. They also have no Advanced bodybuilding data: Bodybuilding is set to Simple and your exercise log on this phone is kept. Files from 2.3.0 have no exercises on workout types, so the ones on this phone are kept. If a file has no language, colour theme, One-handed mode or motivation quote, those stay as they are on this phone. If a file has no Track transitions key, it imports as off.</li>
+    <li><strong>Checks before import:</strong> a file larger than 10 MB is refused with <strong>This backup is larger than 10 MB</strong>. The file is then read and checked in full before anything changes: counts (days, purchases, HYROX sessions, bodybuilding logs), names and values such as prices, times, distances and weights must be within sensible limits. Very long names are shortened. A damaged or out-of-range file shows <strong>Invalid workout plan file</strong>, and your data stays as it was.</li>
+    <li><strong>All or nothing:</strong> an import either completes for everything (calendar, HYROX, bodybuilding, purchases and settings) or changes nothing. If any part fails, Liftloq puts back what was on this phone before the import. Auto export waits until the import has finished, so the backup file never holds a half-imported state.</li>
   </ol>
 
   <h3>Auto export</h3>
   <ol class="steps">
     <li>Settings → <strong>Workout plan</strong> → turn on <strong>Auto export</strong>. Android’s folder picker opens (in Documents): open or create a folder, for example <strong>Liftloq</strong>, tap <strong>Use this folder</strong> and allow access. If you cancel, Auto export stays off.</li>
     <li>Liftloq writes one file there, <strong>liftloq-backup.json</strong>, right away and again right after every change: days, types, notes, HYROX, the bodybuilding log, purchases and the settings that are part of the backup. It is the same file as <strong>Export workout plan</strong>, so <strong>Import workout plan</strong> can restore it. The file is replaced each time; no dated copies pile up.</li>
+    <li>Each backup is first written in full to a temporary file, <strong>liftloq-backup.writing.json</strong>, in the same folder, and only then takes the place of <strong>liftloq-backup.json</strong>. If writing is interrupted, the previous backup stays intact. Leftover temporary files from an interrupted write are removed on the next backup; other files in the folder are not touched. If the storage location cannot rename files, Liftloq writes the finished backup directly over <strong>liftloq-backup.json</strong>.</li>
     <li><strong>Change folder</strong> (shown while Auto export is on) picks another folder. It also shows when the last auto export happened.</li>
     <li>Turning Auto export off stops the backups and gives back the folder access; the file already written stays.</li>
     <li>The backup also includes the Auto export settings (on or off, the folder and the last export time). The file itself cannot grant access to the storage folder. When you import it on this phone and Liftloq can still use that folder, Auto export goes back to it. If the folder is not available, including a file from another device, Auto export stays off and shows <strong>Folder access was removed. Turn on to choose a folder again.</strong>: turn it on, select the folder and grant access again. Files from older versions don’t have these settings, so importing them leaves Auto export as it is.</li>
@@ -360,6 +363,7 @@
   </div>
 
   <h2>Privacy &amp; contact</h2>
+  <p>Your data stays on this phone unless you export it or turn on Auto export. The only network request is the optional motivation quote (Settings → General → <strong>Show motivation quote</strong>), which downloads one quote from zenquotes.io. A reply larger than 64 KB is discarded and the quote is simply hidden.</p>
   <p><a href="../">Privacy Policy</a> · Contact: <a href="mailto:p4we1.dev@gmail.com">p4we1.dev@gmail.com</a></p>
   <p class="meta">Liftloq · local data only · no account</p>
 </body>
