@@ -28,7 +28,7 @@
     <img src="../assets/liftloq-logo-light.svg" alt="Liftloq" width="198" height="56" />
   </picture>
   <h1>How to use Liftloq</h1>
-  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.7.8</p>
+  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.7.9</p>
 
   <p>Liftloq keeps your workout plan on your device. Mark days on the calendar, manage workout types, plan and time HYROX workouts, and optionally track supplement spending — without signing in.</p>
 
@@ -42,7 +42,7 @@
     <li>The day shows one colour band per entry: Bodybuilding first, then HYROX.</li>
     <li>The days from the previous and next month at the start and end of the grid show their workouts too, slightly faded, so the current month stands out. The month widget shows them the same way.</li>
     <li><strong>Jump to a month:</strong> tap the month name at the top (it has a small ▾ arrow). <strong>Go to month</strong> opens with the year and all 12 months: the month you are looking at is filled, today’s month is outlined. Use ‹ › to change the year, then tap a month to jump there. <strong>This month</strong> jumps back to today; <strong>Cancel</strong> keeps the calendar where it was. The ‹ › arrows next to the title and swiping left or right on the month still move one month at a time.</li>
-    <li>The <strong>menu</strong> button is the kettlebell at the top left of each page (in <strong>One-handed mode</strong> it is at the bottom; see <a href="#one-handed">One-handed mode</a>).</li>
+    <li>The <strong>menu</strong> button is the kettlebell at the top left of each page. In <strong>One-handed mode</strong> that kettlebell is at the bottom, and the Liftloq logo is at the top left instead. <strong>Help</strong> stays at the top right, and the title stays centred. Normal mode is unchanged (see <a href="#one-handed">One-handed mode</a>).</li>
   </ol>
 
   <figure>
@@ -80,8 +80,8 @@
   <h3 id="sessions-per-week">Sessions per week</h3>
   <ol class="steps">
     <li>Open a Bodybuilding type (tap it, or <strong>+</strong> for a new one). Below <strong>Brightness</strong>, <strong>Sessions per week</strong> sets how often you want to train it: <strong>Off</strong> or <strong>1</strong>–<strong>7</strong>. Then tap <strong>Save</strong>. It works the same in Simple and Advanced bodybuilding; a new type starts at Off.</li>
-    <li>The target sets the colours in Stats › <strong>Days since</strong> for that type. With a target of <em>t</em> sessions a week, the chip is <strong>green</strong> up to 7 ÷ <em>t</em> days (rounded down), <strong>red</strong> from 14 ÷ <em>t</em> days (rounded up), and <strong>yellow</strong> in between. A type you have never logged is red.</li>
-    <li>For example: at 3 a week it is green for 0–2 days, yellow for 3–4 and red from 5; at 1 a week, green up to 7 days, yellow 8–13 and red from 14. With <strong>Off</strong> there is no target, so the chip has no warning colour: it uses the same purple as the card’s heading, also for a type you have never logged.</li>
+    <li>The target sets the colours on the <strong>Days since last workout</strong> card in Stats › <strong>Days since</strong> for that type. With a target of <em>t</em> sessions a week, the chip is <strong>green</strong> up to 7 ÷ <em>t</em> days (rounded down), <strong>red</strong> from 14 ÷ <em>t</em> days (rounded up), and <strong>yellow</strong> in between. A type you have never logged is red.</li>
+    <li>For example: at 3 a week it is green for 0–2 days, yellow for 3–4 and red from 5; at 1 a week, green up to 7 days, yellow 8–13 and red from 14. With <strong>Off</strong> there is no target. The type is listed on the separate <strong>No weekly target</strong> card, subtitled <strong>Sessions per week Off</strong>, and the chip has no warning colour: it uses the same purple as the card’s heading, also for a type you have never logged.</li>
   </ol>
   <figure>
     <img src="images/help-bb-sessions-per-week.webp" alt="Edit type sheet for Push with Sessions per week buttons Off and 1 to 7, 3 selected, above Cancel and Save" loading="lazy" width="540" height="986" />
@@ -217,13 +217,13 @@
   <h2>6. Stats</h2>
   <ol class="steps">
     <li>Menu → <strong>Stats</strong>. The bottom toggle has <strong>Days since</strong> (opens first), <strong>Overview</strong>, <strong>HYROX</strong> (only while HYROX is on) and <strong>Progress</strong> (only in Advanced bodybuilding). While Progress is there, the toggle shows icons only.</li>
-    <li><strong>Days since</strong> shows how long ago you last did each type, longest first (types you have never logged at the top). A type with a <a href="#sessions-per-week">Sessions per week</a> target is green, yellow or red depending on how it is going against that target. A type with no target (Off) and HYROX types show a neutral chip in the heading’s purple.</li>
+    <li><strong>Days since</strong> shows how long ago you last did each type, longest first: never logged at the top, then the most days. Bodybuilding types with a <a href="#sessions-per-week">Sessions per week</a> target stay on the <strong>Days since last workout</strong> card. The chip is green, yellow or red against that target. Bodybuilding types set to <strong>Off</strong> are on a separate <strong>No weekly target</strong> card, subtitled <strong>Sessions per week Off</strong>, in that same order. Their chips stay the heading’s purple. HYROX types stay on <strong>Days since last workout</strong>, with that same purple chip.</li>
     <li><strong>Overview</strong> shows this week or month by type; <strong>HYROX</strong> shows History, templates and best splits.</li>
     <li><strong>Swipe up</strong> to go to the next tab: Days since → Overview → HYROX → Progress → Days since. Long tabs scroll normally first; the tab only changes when you keep swiping up at the bottom. The toggle follows.</li>
   </ol>
   <figure>
-    <img src="images/help-stats-days-since.webp" alt="Stats Days since tab sorted longest first: Core never, Arms 10 days, Legs 9 days, Push 5 days, Pull 2 days; Legs is yellow, Push red, and Core, Arms and Pull have purple chips" loading="lazy" width="540" height="806" />
-    <figcaption>Stats opens on Days since, longest first. Push (3 a week) is red at 5 days and Legs (1 a week) yellow at 9; Core, Arms and Pull have no target, so their chips are purple.</figcaption>
+    <img src="images/help-stats-days-since.webp" alt="Stats Days since in normal mode, kettlebell at the top left: Days since last workout with Pull at 5 days and Legs at 2 days, and No weekly target subtitled Sessions per week Off with Push at 6 days and Cardio at 4 days" loading="lazy" width="540" height="1200" />
+    <figcaption>Normal mode: the kettlebell stays at the top left. Pull and Legs stay on <strong>Days since last workout</strong> (yellow at 5 days, green at 2). Push and Cardio, set to Off, are on <strong>No weekly target</strong>, subtitled <strong>Sessions per week Off</strong>, with purple chips.</figcaption>
   </figure>
   <h3>Progress (Advanced bodybuilding)</h3>
   <ol class="steps">
@@ -290,23 +290,23 @@
     <li>When it is on, Calendar, Bodybuilding, HYROX, Stats and Supps cost have one button at the bottom centre, always in the same place. Its left half (the kettlebell) opens the menu; its right half is the page’s main action, the same as the round button in normal mode: add a workout today on the Calendar, and <strong>+</strong> on Bodybuilding, HYROX and Supps cost. Stats has no main action, so it shows only the menu button, below the Stats tabs.</li>
     <li>Settings keeps its usual <strong>Save</strong> button in the bottom-right corner, exactly as when One-handed mode is off. Settings has no menu button in this mode, so to leave it, use your phone’s back button or back gesture: it takes you to the Calendar. <strong>About Liftloq</strong> at the end of Settings opens the About page; its back arrow returns to Settings.</li>
     <li>The menu opens as a panel from the bottom with the same pages as before. Swipe it down, tap outside it or press back to close it. Swiping right opens this same bottom menu (not the side menu), in the same places where it opens the side menu when One-handed mode is off; on the month grid, swiping right still goes to the previous month. The other swipes (swiping up at the end of a list, swiping left below the calendar to the next card) work as before.</li>
-    <li>The top-left menu button is hidden in this mode, on every page. Lists scroll underneath the bottom button, and the last item can always be scrolled clear of it. <strong>Start HYROX</strong> on the Calendar sits above it. During a HYROX race the race buttons are shown instead.</li>
+    <li>On Calendar, Bodybuilding, HYROX, Stats, Supps cost and Settings, the Liftloq logo is at the top left and the title stays centred. On the Calendar, <strong>Help</strong> stays at the top right. The kettlebell is not at the top left. Lists scroll underneath the bottom button, and the last item can always be scrolled clear of it. <strong>Start HYROX</strong> on the Calendar sits above it. During a HYROX race the race buttons are shown instead. With One-handed mode off, the kettlebell stays at the top left.</li>
   </ol>
   <figure>
     <img src="images/help-one-handed-setting.webp" alt="Settings General section with the One-handed mode switch turned on and marked unsaved, under Theme" loading="lazy" width="540" height="685" />
     <figcaption>Settings → General → One-handed mode: switch it on, then tap Save.</figcaption>
   </figure>
   <figure>
-    <img src="images/help-one-handed-pill.webp" alt="Calendar in one-handed mode: no menu button at the top left, and a two-part button at the bottom centre with a kettlebell on the left and the add-workout icon on the right" loading="lazy" width="540" height="1200" />
-    <figcaption>One-handed mode: the kettlebell opens the menu, the other half is the page’s main action.</figcaption>
+    <img src="images/help-one-handed-pill.webp" alt="Calendar in one-handed mode: Liftloq logo at the top left, the month title centred, Help at the top right, and a two-part button at the bottom centre with a kettlebell on the left and the add-workout icon on the right" loading="lazy" width="540" height="1200" />
+    <figcaption>One-handed mode: the Liftloq logo is at the top left, Help stays at the top right and the title stays centred. The kettlebell opens the menu; the other half is the page’s main action.</figcaption>
   </figure>
   <figure>
     <img src="images/help-one-handed-sheet.webp" alt="Menu panel open from the bottom with the Liftloq logo and Calendar, Bodybuilding, HYROX, Stats, Supps cost and Settings" loading="lazy" width="540" height="772" />
     <figcaption>The menu opens from the bottom.</figcaption>
   </figure>
   <figure>
-    <img src="images/help-one-handed-stats.webp" alt="Stats Days since tab in one-handed mode with the Days since, Overview and HYROX tabs above a centred kettlebell menu button" loading="lazy" width="540" height="1200" />
-    <figcaption>Stats: the menu button sits below the tabs.</figcaption>
+    <img src="images/help-one-handed-stats.webp" alt="Stats in one-handed mode: Liftloq logo at the top left, Days since last workout and No weekly target cards, Days since, Overview and HYROX tabs, and a centred kettlebell menu button below them" loading="lazy" width="540" height="1200" />
+    <figcaption>One-handed mode: the Liftloq logo is at the top left. <strong>Days since last workout</strong> and <strong>No weekly target</strong> (Sessions per week Off) sit above the tabs. The menu button sits below them.</figcaption>
   </figure>
   <figure>
     <img src="images/help-card-order.webp" alt="Settings Card order section with up and down buttons for each card" loading="lazy" width="540" height="561" />
@@ -322,8 +322,8 @@
   </figure>
   <h2>8. Export / import</h2>
   <ol class="steps">
-    <li>Settings → <strong>Workout plan</strong> → <strong>Export workout plan</strong> saves a JSON backup (types, days, notes, supplements, HYROX data, your card order and Modes switches, and the Advanced bodybuilding data: the exercises on your workout types, the exercise log and your custom exercises). The colour theme is a setting on this phone and is not included.</li>
-    <li><strong>Import workout plan</strong> replaces your data from such a file, after a confirmation. Days with more than 3 entries keep the first 3. Files from older versions have no card settings, so the default order is used and all cards are turned on. They also have no Advanced bodybuilding data: Bodybuilding is set to Simple and your exercise log on this phone is kept. Files from 2.3.0 have no exercises on workout types, so the ones on this phone are kept.</li>
+    <li>Settings → <strong>Workout plan</strong> → <strong>Export workout plan</strong> saves a JSON backup (types, days, notes, supplements, HYROX data, and the Advanced bodybuilding data: the exercises on your workout types, the exercise log and your custom exercises). It includes the settings you can change: language, currency, colour theme, <strong>One-handed mode</strong>, <strong>Show motivation quote</strong>, your card order and the Modes switches. <strong>Auto export</strong> writes this same file.</li>
+    <li><strong>Import workout plan</strong> replaces your data from such a file, after a confirmation, including those settings. Days with more than 3 entries keep the first 3. Older backups still import. Files from older versions have no card settings, so the default order is used and all cards are turned on. They also have no Advanced bodybuilding data: Bodybuilding is set to Simple and your exercise log on this phone is kept. Files from 2.3.0 have no exercises on workout types, so the ones on this phone are kept. If a file has no language, colour theme, One-handed mode or motivation quote, those stay as they are on this phone.</li>
   </ol>
 
   <h3>Auto export</h3>
@@ -332,7 +332,7 @@
     <li>Liftloq writes one file there, <strong>liftloq-backup.json</strong>, right away and again right after every change: days, types, notes, HYROX, the bodybuilding log, purchases and the settings that are part of the backup. It is the same file as <strong>Export workout plan</strong>, so <strong>Import workout plan</strong> can restore it. The file is replaced each time; no dated copies pile up.</li>
     <li><strong>Change folder</strong> (shown while Auto export is on) picks another folder. It also shows when the last auto export happened.</li>
     <li>Turning Auto export off stops the backups and gives back the folder access; the file already written stays.</li>
-    <li>The backup also includes the Auto export settings (on or off, the folder and the last export time). When you import it on the same phone, Auto export goes back to that folder. On a new phone (or if Liftloq can no longer use that folder) Auto export stays off and shows <strong>Folder access was removed. Turn on to choose a folder again.</strong>: turn it on and pick the folder again. Files from older versions don’t have these settings, so importing them leaves Auto export as it is.</li>
+    <li>The backup also includes the Auto export settings (on or off, the folder and the last export time). The file itself cannot grant access to the storage folder. When you import it on this phone and Liftloq can still use that folder, Auto export goes back to it. If the folder is not available, including a file from another device, Auto export stays off and shows <strong>Folder access was removed. Turn on to choose a folder again.</strong>: turn it on, select the folder and grant access again. Files from older versions don’t have these settings, so importing them leaves Auto export as it is.</li>
     <li>If the folder is deleted or Liftloq’s access to it is removed, Auto export turns itself off and shows <strong>Folder access was removed. Turn on to choose a folder again.</strong></li>
   </ol>
   <figure>
