@@ -28,7 +28,7 @@
     <img src="../assets/liftloq-logo-light.svg" alt="Liftloq" width="198" height="56" />
   </picture>
   <h1>How to use Liftloq</h1>
-  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.7.9</p>
+  <p class="meta">Local workout calendar · No account required · Dark theme only · Updated for version 2.8.1</p>
 
   <p>Liftloq keeps your workout plan on your device. Mark days on the calendar, manage workout types, plan and time HYROX workouts, and optionally track supplement spending — without signing in.</p>
 
@@ -169,7 +169,7 @@
     <li><strong>Delete:</strong> on the HYROX list, tap the red trash on a workout (or Delete inside the editor). Confirm — sessions are removed and the workout is cleared from every calendar day. Official race is not re-seeded after you delete it.</li>
     <li><strong>Plan it:</strong> on a day sheet, open <strong>HYROX workouts</strong> and pick one or more, then <strong>Save</strong>.</li>
     <li><strong>Start HYROX:</strong> on a day with a planned HYROX workout, a <strong>Start HYROX</strong> button appears above the add button. With several planned, it opens a menu to choose one.</li>
-    <li><strong>Race mode:</strong> a wavy progress bar and the big total sit on top, then a <strong>Current</strong> card (segment and its time), a <strong>Next</strong> card (with your best split when known) and every finished split, newest first, vs your best (scroll to see them all). Tap <strong>Next split</strong> at the end of each segment. <strong>Pause</strong> freezes the clock (paused time is not counted; the wave goes flat), <strong>Resume</strong> continues, the undo button removes the last split. All three sit in one connected row that floats at the bottom of the screen; the list scrolls underneath it, and the last split scrolls clear above it. <strong>Finish</strong> (top bar) asks for confirmation. Then review and <strong>Save</strong>; results show with an <strong>OK</strong> button back to the calendar.</li>
+    <li><strong>Race mode:</strong> a wavy progress bar and the big total sit on top, then a <strong>Current</strong> card (segment and its time), a <strong>Next</strong> card (with your best split when known) and every finished split, newest first, vs your best (scroll to see them all). Tap <strong>Next split</strong> at the end of each segment. <strong>Pause</strong> freezes the clock (paused time is not counted; the wave goes flat), <strong>Resume</strong> continues, the undo button removes the last split. All three sit in one connected row that floats at the bottom of the screen; the list scrolls underneath it, and the last split scrolls clear above it. <strong>Finish</strong> (top bar) asks for confirmation. Then review and <strong>Save</strong>; results show with an <strong>OK</strong> button back to the calendar. To time the gap between segments, turn on <strong>Track transitions</strong> (see <a href="#hyrox-transitions">Track transitions</a>).</li>
     <li><strong>Stats:</strong> Stats → <strong>HYROX</strong> shows History (tap a session for its results), best splits and station decay. History is newest first; sessions on the same day stay in the order you did them, also after an export/import.</li>
   </ol>
 
@@ -214,6 +214,13 @@
     <img src="images/help-stats-hyrox.webp" alt="Stats HYROX tab" loading="lazy" width="540" height="1468" />
     <figcaption>Stats → HYROX: History on top, then Templates. Best split per segment and Station decay follow below.</figcaption>
   </figure>
+  <h3 id="hyrox-transitions">Track transitions</h3>
+  <ol class="steps">
+    <li>Settings → <strong>Modes</strong> shows <strong>Track transitions</strong> under <strong>HYROX</strong>, only while HYROX is on. It is off by default. Turn it on and tap <strong>Save</strong>.</li>
+    <li>A race started afterwards times the gap between segments. <strong>Next split</strong> alternates the segment and a <strong>Transition</strong>. There is no transition after the final segment. The progress line reads <strong>Split X of Y</strong>. With the switch off, the race is unchanged. An in-progress race keeps the mode it started with.</li>
+    <li>Review shows a Transition total and <strong>Transition 0:XX</strong> on each segment that has a gap. Segment times exclude the gap; the session total includes it.</li>
+    <li>The setting is included in settings export and import. A missing key imports as off.</li>
+  </ol>
   <h2>6. Stats</h2>
   <ol class="steps">
     <li>Menu → <strong>Stats</strong>. The bottom toggle has <strong>Days since</strong> (opens first), <strong>Overview</strong>, <strong>HYROX</strong> (only while HYROX is on) and <strong>Progress</strong> (only in Advanced bodybuilding). While Progress is there, the toggle shows icons only.</li>
@@ -269,9 +276,9 @@
   <ol class="steps">
     <li>Menu → <strong>Settings</strong>. Sections: <strong>General</strong> (language, currency, theme, one-handed mode, motivation quote), <strong>Modes</strong>, <strong>Card order</strong>, <strong>Workout plan</strong> and <strong>About</strong>.</li>
     <li><strong>Theme:</strong> Settings → General → <strong>Theme</strong> lets you choose <strong>Purple</strong> (default), <strong>Lavender</strong>, <strong>Rose</strong> or <strong>Red</strong>. Pick a theme and tap <strong>OK</strong>; the row shows your choice as unsaved. Tap <strong>Save</strong> to apply it: the app reloads in the new theme and both home-screen widgets follow. Leaving Settings without Save keeps the current theme. Liftloq is dark-only: every theme is dark, even when the phone is set to light mode.</li>
-    <li><strong>Modes:</strong> turn <strong>Bodybuilding</strong> or <strong>HYROX</strong> off to hide everything for that mode (calendar entries, legend, stats, menu pages). Nothing is deleted; turning it back on restores it. One of the two must stay on. <strong>Supps cost</strong> has its own switch, separate from that rule: off hides the Supps page from the menu and swipe cycle (purchases are kept).</li>
+    <li><strong>Modes:</strong> turn <strong>Bodybuilding</strong> or <strong>HYROX</strong> off to hide everything for that mode (calendar entries, legend, stats, menu pages). Nothing is deleted; turning it back on restores it. One of the two must stay on. <strong>Supps cost</strong> has its own switch, separate from that rule: off hides the Supps page from the menu and swipe cycle (purchases are kept). While <strong>HYROX</strong> is on, a <strong>Track transitions</strong> switch appears under it (off by default). Turn it on and tap <strong>Save</strong> to time the gap between segments in a race started afterwards (see <a href="#hyrox-transitions">Track transitions</a>).</li>
     <li><strong>Card order:</strong> use the ↑ / ↓ buttons to set the order of the cards in the menu and in the swipe cycle. Changes apply right away. Cards switched off in Modes are dimmed and marked <strong>Hidden</strong>; you can still move them, and they are skipped until you turn them back on. Settings is always last in the menu and is never part of the swipe cycle.</li>
-    <li>A language, theme or one-handed mode change is applied when you tap <strong>Save</strong>.</li>
+    <li>A language, theme, one-handed mode or Track transitions change is applied when you tap <strong>Save</strong>. The Save button expands after any setting change.</li>
     <li><strong>About:</strong> Settings → About → <strong>About Liftloq</strong> shows the app version (name and build number). <strong>Help &amp; feedback</strong> opens this page (<strong>How to use</strong>) or an email to the developer (<strong>Feedback</strong>); <strong>Legal</strong> has the <strong>Privacy policy</strong>.</li>
   </ol>
 
@@ -322,8 +329,8 @@
   </figure>
   <h2>8. Export / import</h2>
   <ol class="steps">
-    <li>Settings → <strong>Workout plan</strong> → <strong>Export workout plan</strong> saves a JSON backup (types, days, notes, supplements, HYROX data, and the Advanced bodybuilding data: the exercises on your workout types, the exercise log and your custom exercises). It includes the settings you can change: language, currency, colour theme, <strong>One-handed mode</strong>, <strong>Show motivation quote</strong>, your card order and the Modes switches. <strong>Auto export</strong> writes this same file.</li>
-    <li><strong>Import workout plan</strong> replaces your data from such a file, after a confirmation, including those settings. Days with more than 3 entries keep the first 3. Older backups still import. Files from older versions have no card settings, so the default order is used and all cards are turned on. They also have no Advanced bodybuilding data: Bodybuilding is set to Simple and your exercise log on this phone is kept. Files from 2.3.0 have no exercises on workout types, so the ones on this phone are kept. If a file has no language, colour theme, One-handed mode or motivation quote, those stay as they are on this phone.</li>
+    <li>Settings → <strong>Workout plan</strong> → <strong>Export workout plan</strong> saves a JSON backup (types, days, notes, supplements, HYROX data, and the Advanced bodybuilding data: the exercises on your workout types, the exercise log and your custom exercises). It includes the settings you can change: language, currency, colour theme, <strong>One-handed mode</strong>, <strong>Show motivation quote</strong>, <strong>Track transitions</strong>, your card order and the Modes switches. <strong>Auto export</strong> writes this same file.</li>
+    <li><strong>Import workout plan</strong> replaces your data from such a file, after a confirmation, including those settings. Days with more than 3 entries keep the first 3. Older backups still import. Files from older versions have no card settings, so the default order is used and all cards are turned on. They also have no Advanced bodybuilding data: Bodybuilding is set to Simple and your exercise log on this phone is kept. Files from 2.3.0 have no exercises on workout types, so the ones on this phone are kept. If a file has no language, colour theme, One-handed mode or motivation quote, those stay as they are on this phone. If a file has no Track transitions key, it imports as off.</li>
   </ol>
 
   <h3>Auto export</h3>
